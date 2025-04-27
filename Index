@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Întreprinderea Mea</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- HEADER CU BANNER -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Întreprinderea Mea</h1>
+      <p>Profesionalism, încredere și inovație.</p>
+      <div class="language-switch">
+        <button id="lang-toggle">EN</button>
+        <button id="dark-toggle">Dark Mode</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MENIU PRINCIPAL -->
+  <nav class="main-nav">
+    <a href="#programari" class="nav-link">Programări</a>
+    <a href="#servicii" class="nav-link">Servicii</a>
+    <a href="#despre" class="nav-link">Despre</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <a href="shop.html" class="nav-link">Shop</a>
+  </nav>
+
+  <!-- PAGINA PRINCIPALĂ -->
+  <main class="container">
+
+    <!-- PROGRAMARI -->
+    <section id="programari" class="section">
+      <h2>Programări</h2>
+      <p>Completează formularul pentru a programa o întâlnire:</p>
+      <form action="send_mail.php" method="POST" class="form">
+        <input type="text" name="nume" placeholder="Numele tău" required>
+        <input type="email" name="email" placeholder="Email-ul tău" required>
+        <input type="tel" name="telefon" placeholder="Telefonul tău" required>
+        <textarea name="mesaj" placeholder="Mesajul tău" required></textarea>
+        <button type="submit">Trimite Programare</button>
+      </form>
+    </section>
+
+    <!-- SERVICII -->
+    <section id="servicii" class="section">
+      <h2>Serviciile Noastre</h2>
+      <div class="servicii-list">
+        <div class="serviciu">Serviciu 1</div>
+        <div class="serviciu">Serviciu 2</div>
+        <div class="serviciu">Serviciu 3</div>
+      </div>
+    </section>
+
+    <!-- DESPRE -->
+    <section id="despre" class="section">
+      <h2>Despre Noi</h2>
+      <div class="despre-content">
+        <div class="rubrica">
+          <h3>Rubrica 1</h3>
+          <p>Text editabil ulterior.</p>
+        </div>
+        <div class="rubrica">
+          <h3>Rubrica 2</h3>
+          <p>Text editabil ulterior.</p>
+        </div>
+        <div class="poza-despre">
+          <img src="images/poza-minimalista.jpg" alt="Imagine Despre" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:madalina.nedela@gmail.com">madalina.nedela@gmail.com</a></p>
+
+      <div class="contact-buttons">
+        <a href="https://wa.me/40700111222" target="_blank" class="contact-button">WhatsApp</a>
+        <a href="https://www.instagram.com/contul_tau" target="_blank" class="contact-button">Instagram</a>
+        <a href="https://www.tiktok.com/@contul_tau" target="_blank" class="contact-button">TikTok</a>
+      </div>
+
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div style="margin-top: 1rem;">
+          <a href="https://www.google.com/maps/place/Locatia+ta" target="_blank" class="map-button">Deschide în Google Maps</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 Întreprinderea Mea. Toate drepturile rezervate.
+  </footer>
+
+</body>
+</html>
